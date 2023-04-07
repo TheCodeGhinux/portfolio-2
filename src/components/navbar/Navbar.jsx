@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../../assets/logo.svg'
 import { RiMenu4Fill, RiCloseFill } from 'react-icons/ri';
-import Menu from './menu';
+import Menu from './Menu';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(true);
