@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #282C33;
+}
+
+span {
+  color: #C778DD;
+}
+
+button {
+  border: 1px solid #C778DD;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  width: fit-content;
+  color: #fff;
+}
+
+body {
+  /* width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 5;
+}
+
+/* nav a {
+  color: #fff;
+} */
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+background: rgb(255 255 255 / 60%);
+    backdrop-filter: blur(6px);
+}
+
+.menu-btn {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  /* width: 230px; */
+  /* right: 0; */
+}
+
+.menu-li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  /* flex: 40px 0; */
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  /* width: 200px;
+  height: 20px; */
+  flex: 1;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  position: relative;
+  /* left: 25px; */
+  z-index: 1;
+}
+
+.line::after {
+  content: "";
+  width: 13rem;
+  height: 1px;
+  background: #C778DD;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.skills-tab {
+  border: 1px solid #ABB2BF;
+}
+
+.tab-header {
+  border-bottom: 1px solid #ABB2BF ;
+  padding: 8px;
+}
+
+.skill {
+  padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .sm-nav {
+    display: none;
+  }
+}
