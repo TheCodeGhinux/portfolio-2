@@ -25,7 +25,7 @@ const Skills = () => {
           <div className='skills-img w-[100%]'>
             <img src={svg} alt='' />
           </div>
-          <div className='skills-tab-con w-[100%] flex gap-4'>
+          <div className='skills-tab-con w-[100%] flex flex-col lg:flex-row gap-4 py-4'>
             <div className='col1'>
               <motion.div
                 variants={heroTextVariant(1.1, 'right')}
@@ -57,7 +57,7 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                variants={heroTextVariant(1.1, 'up',)}
+                variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -70,8 +70,13 @@ const Skills = () => {
                 </div>
               </motion.div>
             </motion.div>
-            <div className='col3 flex flex-col gap-4'>
-              <div className='skills-tab w-[11rem] text-grey'>
+            <motion.div className='col3 flex flex-col gap-4'>
+              <motion.div
+                variants={heroTextVariant(1.1, 'down')}
+                initial='hidden'
+                whileInView='show'
+                className='skills-tab w-[11rem] text-grey'
+              >
                 <div className='tab-header border-b '>
                   <h2>Tools</h2>
                 </div>
@@ -86,8 +91,13 @@ const Skills = () => {
                     <li>Git</li>
                   </ul>
                 </div>
-              </div>
-              <div className='skills-tab w-[11rem] text-grey'>
+              </motion.div>
+              <motion.div
+                variants={heroTextVariant(1.1, 'up')}
+                initial='hidden'
+                whileInView='show'
+                className='skills-tab w-[11rem] text-grey'
+              >
                 <div className='tab-header border-b '>
                   <h2>Frameworks</h2>
                 </div>
@@ -102,8 +112,8 @@ const Skills = () => {
                     <li>Pandas</li>
                   </ul>
                 </div>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>
