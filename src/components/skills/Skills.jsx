@@ -15,17 +15,17 @@ import {
 const Skills = () => {
   return (
     <div>
-      <div className='skills-con'>
+      <div className='skills-con p-2 my-4'>
         <div className='skills-header text-4xl text-white'>
           <h3 className='line'>
             <span>#</span>skills
           </h3>
         </div>
-        <div className='skills-content p-4 flex items-center'>
-          <div className='skills-img w-[100%]'>
+        <div className='skills-content  m-4 flex items-center'>
+          <div className='skills-img w-[100%] absolute lg:static blur-sm lg:blur-0'>
             <img src={svg} alt='' />
           </div>
-          <div className='skills-tab-con w-[100%] flex flex-col lg:flex-row gap-4 py-4'>
+          <div className='skills-tab-con w-[100%] flex flex-wrap-reverse lg:flex-nowrap lg:flex-row justify-center gap-4 py-4 m-4'>
             <div className='col1'>
               <motion.div
                 variants={heroTextVariant(1.1, 'right')}
@@ -42,7 +42,7 @@ const Skills = () => {
               </motion.div>
             </div>
 
-            <motion.div className='col2 flex flex-col gap-4'>
+            <motion.div className='col2 flex flex-row md:flex-col gap-4'>
               <motion.div
                 variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
@@ -70,7 +70,7 @@ const Skills = () => {
                 </div>
               </motion.div>
             </motion.div>
-            <motion.div className='col3 flex flex-col gap-4'>
+            <motion.div className='col3 flex flex-row md:flex-col gap-4'>
               <motion.div
                 variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'

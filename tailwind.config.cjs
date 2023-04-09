@@ -10,6 +10,11 @@ module.exports = {
         grey: '#ABB2BF',
         primary: '#C778DD',
       },
+      backgroundImage: {
+        'logo-pattern':
+          "url('/src/assets/skills-svg.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
     },
   },
   plugins: [],

@@ -7,14 +7,14 @@ import img from '../../assets/image.png'
 const About = () => {
   return (
     <div>
-      <div className='about-con'>
+      <div className='about-con p-2'>
         <div className='about-header text-4xl text-white'>
           <h3 className='line'>
             <span>#</span>about-me
           </h3>
         </div>
-        <div className="about-content p-4 flex items-center">
-          <div className='about-text w-[100%] flex flex-col gap'>
+        <div className="about-content p-4 flex flex-col lg:flex-row items-center">
+          <div className='about-text w-[100%] flex flex-col gap-4'>
             <h3 className="text-xl text-grey">
               Hello, im Ayo! <br /> <br /> Im a Backend and front-end developer based
               in Nigeria. I can develop responsive websites from scratch and raise

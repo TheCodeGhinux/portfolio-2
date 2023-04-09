@@ -3,25 +3,26 @@ import Scrollbar from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
 
 
-const overscrollOptions = {
-    enable: true,
-    effect: 'bounce',
-    damping: 0.15,
-    maxOverscroll: 150,
-    glowColor: '#fff',
-  };
-
-//   const overscrollOptions = {
+// const overscrollOptions = {
 //     enable: true,
-//     effect: 'glow',
-//     damping: 0.1,
-//     maxOverscroll: 200,
-//     glowColor: '#222a2d',
+//     effect: 'bounce',
+//     damping: 0.15,
+//     maxOverscroll: 150,
+//     glowColor: '#fff',
 //   };
+
+  const overscrollOptions = {
+    enable: true,
+    effect: 'glow',
+    effect: 'bounce',
+    damping: 0.1,
+    maxOverscroll: 200,
+    glowColor: '#c778dd80',
+  };
 
   
 const options = {
-    damping : 0.03,
+    damping : 0.02,
     plugins: {
       overscroll: { ...overscrollOptions },
     },

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { RiMenu4Fill, RiCloseFill } from 'react-icons/ri';
+import {BiMenuAltLeft} from 'react-icons/bi'
 
 const Path = (props) => (
   <motion.path
@@ -18,17 +19,17 @@ const MenuToggle = ({ toggle }) => {
 
   return (
     <div>
-       <button className='menu-btn' onClick={toggle}>
+      <button className='menu-btn' onClick={toggle}>
         <div onClick={() => setIsActive(!isActive)}>
           {isActive ? (
-            <RiMenu4Fill className='w-6 h-6 fill-white' />
+            <BiMenuAltLeft className='w-6 h-6 fill-white' />
           ) : (
             <RiCloseFill className='w-6 h-6 fill-white' />
           )}
         </div>
-       </button>
+      </button>
     </div>
-  )
+  );
 }
 
 export  {MenuToggle}
