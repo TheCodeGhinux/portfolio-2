@@ -27,8 +27,8 @@ export const heroVariants = (direction, type, delay, duration) => ({
 
 export const heroTextVariant = (delay, direction) => ({
   hidden: {
-    x: direction === 'left' ? 150 : direction === 'right' ? -150 : 0,
-    y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+    x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
+    y: direction === 'up' ? '100%' : direction === 'down' ? '-100%' : 0,
     // z: direction === 'left-right' ? 100 : direction === 'top-right' ? -100 : 0,
     opacity: 0,
   },
@@ -40,6 +40,7 @@ export const heroTextVariant = (delay, direction) => ({
       type: 'spring',
       duration: 1.25,
       delay,
+      ease: 'easeOut',
     },
   },
 });

@@ -1,10 +1,10 @@
-import React from 'react'
-import image from '../../assets/image.png'
-import outline from '../../assets/outline.svg'
-import sign from '../../assets/quote-sign.svg'
-import dots from '../../assets/dots.svg'
+import React from 'react';
+import image from '../../assets/image.png';
+import outline from '../../assets/outline.svg';
+import sign from '../../assets/quote-sign.svg';
+import dots from '../../assets/dots.svg';
 
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 import {
   heroVariants,
   heroTextVariant,
@@ -14,11 +14,9 @@ import {
   letter,
 } from '../../../utils/motion.js';
 
-
 const line1 = 'Software Engineer, Backend Developer';
 const text3 =
   'He crafts responsive websites where technologies meet creativity';
-
 
 const Hero = () => {
   return (
@@ -33,7 +31,7 @@ const Hero = () => {
             className='hero-text flex flex-col gap-8 w-[100%]'
           >
             <motion.h1
-              variants={heroTextVariant(1.1, 'right')}
+              variants={heroTextVariant(1.1, 'down')}
               initial='hidden'
               whileInView='show'
               className='text-xl lg:text-3xl'
@@ -47,12 +45,7 @@ const Hero = () => {
               whileInView='show'
               className='text-xl lg:text-3xl'
             >
-              I'm Ayo, <br />{' '}
-              <span className='text-primary'>
-                {' '}
-                {line1}
-              </span>{' '}
-              and
+              I'm Ayo, <br /> <span className='text-primary'> {line1}</span> and
               <span className='text-primary'> Front-end developer</span>
             </motion.h1>
 
@@ -62,15 +55,12 @@ const Hero = () => {
               animate='show'
               className='text-xl text-grey'
             >
-              {text3.split("").map((char, index) => {
+              {text3.split('').map((char, index) => {
                 return (
-                  <motion.span
-                    variants={letter}
-                    key={char + "-" + index}
-                  >
+                  <motion.span variants={letter} key={char + '-' + index}>
                     {char}
                   </motion.span>
-                )
+                );
               })}
             </motion.h3>
 
@@ -84,9 +74,9 @@ const Hero = () => {
             </motion.button>
           </motion.div>
 
-          <motion.div 
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1, }} 
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             className='hero-img  w-[90%] relative top-[3rem] lg:top-0 h-60 lg:h-auto'
           >
             <img className='w-[100%] w-[9rem]' src={outline} alt='' />
@@ -118,6 +108,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

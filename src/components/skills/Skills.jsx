@@ -28,7 +28,7 @@ const Skills = () => {
           <div className='skills-tab-con w-[100%] flex flex-wrap-reverse lg:flex-nowrap lg:flex-row justify-center gap-4 py-4 m-4'>
             <div className='col1'>
               <motion.div
-                variants={heroTextVariant(1.1, 'right')}
+                variants={heroTextVariant(1.1, 'left')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
