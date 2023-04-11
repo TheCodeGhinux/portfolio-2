@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import image from '../../assets/image.png';
 import outline from '../../assets/outline.svg';
 import sign from '../../assets/quote-sign.svg';
 import dots from '../../assets/dots.svg';
 
-import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+
+import { motion, useAnimation } from 'framer-motion';
 import {
   heroVariants,
   heroTextVariant,
@@ -14,11 +17,25 @@ import {
   letter,
 } from '../../../utils/motion.js';
 
-const line1 = 'Software Engineer, Backend Developer';
+
+
 const text3 =
   'He crafts responsive websites where technologies meet creativity';
 
+
 const Hero = () => {
+
+
+  // const controls = useAnimation();
+  // const [ref, inView] = useInView();
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start('show');
+  //   }
+  // }, [controls, inView]);
+
+
   return (
     <div>
       <div className=' hero  mx-auto px-8 text-white flex flex-col gap-10 lg:gap-28'>
@@ -45,19 +62,30 @@ const Hero = () => {
               whileInView='show'
               className='text-xl lg:text-3xl'
             >
-              I'm Ayo, <br /> <span className='text-primary'> {line1}</span> and
+              Ayo is a <br />{' '}
+              <span className='text-primary'>
+                {' '}
+                Software Engineer, Backend Developer
+              </span>{' '}
+              and
               <span className='text-primary'> Front-end developer</span>
             </motion.h1>
 
             <motion.h3
               variants={sentence}
               initial='hidden'
-              animate='show'
+              whileInView='show'
+              viewport={{ once: false, amount: 0.25 }}
+              
               className='text-xl text-grey'
             >
               {text3.split('').map((char, index) => {
                 return (
-                  <motion.span variants={letter} key={char + '-' + index}>
+                  <motion.span
+                    variants={letter}
+                    viewport={{ once: false, amount: 0.25 }}
+                    key={char + '-' + index}
+                  >
                     {char}
                   </motion.span>
                 );

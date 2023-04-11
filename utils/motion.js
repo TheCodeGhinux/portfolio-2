@@ -69,6 +69,7 @@ export const sentence = {
   show: {
     opacity: 1, 
     transition: {
+      duration: 1.25,
       delay: 0.5,
       staggerChildren: 0.08,
     },
