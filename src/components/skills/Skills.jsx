@@ -28,7 +28,7 @@ const Skills = () => {
           <div className='skills-tab-con w-[100%] flex flex-wrap-reverse lg:flex-nowrap lg:flex-row justify-center gap-4 py-4'>
             <div className='col1'>
               <motion.div
-                // variants={heroTextVariant(1.1, 'left')}
+                variants={heroTextVariant(1.1, 'left')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -37,14 +37,19 @@ const Skills = () => {
                   <h2>Languages</h2>
                 </div>
                 <div className='skill'>
-                  <h3>Python JavaScript NodeJs ML&AI</h3>
+                  <ul className='flex flex-wrap gap-2'>
+                    <li>Python, </li>
+                    <li>JavaScript, </li>
+                    <li>NodeJs, </li>
+                    <li>ML&AI </li>
+                  </ul>
                 </div>
               </motion.div>
             </div>
 
             <motion.div className='col2 flex flex-row md:flex-col gap-4'>
               <motion.div
-                // variants={heroTextVariant(1.1, 'down')}
+                variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -53,11 +58,15 @@ const Skills = () => {
                   <h2>Databases</h2>
                 </div>
                 <div className='skill'>
-                  <h3>MongoDB SQL PostgreSql</h3>
+                  <ul className='flex flex-wrap gap-2'>
+                    <li>MongoDB, </li>
+                    <li>SQL, </li>
+                    <li>PostgreSql, </li>
+                  </ul>
                 </div>
               </motion.div>
               <motion.div
-                // variants={heroTextVariant(1.1, 'up')}
+                variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -66,13 +75,18 @@ const Skills = () => {
                   <h2>Others</h2>
                 </div>
                 <div className='skill'>
-                  <h3>Python JavaScript NodeJs ML&AI</h3>
+                  <ul className='flex flex-wrap gap-2'>
+                    <li>Python, </li>
+                    <li>JavaScript, </li>
+                    <li>NodeJs, </li>
+                    <li>ML&AI </li>
+                  </ul>
                 </div>
               </motion.div>
             </motion.div>
             <motion.div className='col3 flex flex-row md:flex-col gap-4'>
               <motion.div
-                // variants={heroTextVariant(1.1, 'down')}
+                variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -81,19 +95,19 @@ const Skills = () => {
                   <h2>Tools</h2>
                 </div>
                 <div className='skill'>
-                  <ul className='flex flex-wrap'>
-                    <li>VsCode</li>
-                    <li>PyCharm</li>
-                    <li>Vim</li>
-                    <li>Linux</li>
-                    <li>Miicrosoft Azure</li>
-                    <li>Amazon AWS </li>
+                  <ul className='flex flex-wrap gap-2'>
+                    <li>VsCode,</li>
+                    <li>PyCharm,</li>
+                    <li>Vim,</li>
+                    <li>Linux,</li>
+                    <li>Miicrosoft Azure,</li>
+                    <li>Amazon AWS, </li>
                     <li>Git</li>
                   </ul>
                 </div>
               </motion.div>
               <motion.div
-                // variants={heroTextVariant(1.1, 'up')}
+                variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -102,13 +116,13 @@ const Skills = () => {
                   <h2>Frameworks</h2>
                 </div>
                 <div className='skill'>
-                  <ul className='flex flex-wrap'>
-                    <li>ReactJs</li>
-                    <li>ExpressJS</li>
-                    <li>Django</li>
-                    <li>Flask</li>
-                    <li>TensorFlow</li>
-                    <li>NumPy </li>
+                  <ul className='flex flex-wrap gap-2'>
+                    <li>ReactJs,</li>
+                    <li>ExpressJS,</li>
+                    <li>Django,</li>
+                    <li>Flask,</li>
+                    <li>TensorFlow,</li>
+                    <li>NumPy, </li>
                     <li>Pandas</li>
                   </ul>
                 </div>
