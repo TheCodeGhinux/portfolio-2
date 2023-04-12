@@ -4,12 +4,17 @@ import { About, Hero, Skills, Navbar, Footer } from '../components';
 import SmoothScroll from '../components/SmoothScroll/SmoothScroll';
 
 
-const Home = () => {
+const Home = (props) => {
+
+
   return (
     <>
-      <div className='bg-bg m-auto lg:w-[70%] flex flex-col gap-4 lg:gap-16'>
-        {/* <SmoothScroll /> */}
-        <Navbar />
+      <div className={`${props.darkMode ? 'dark' : 'light'} m-auto lg:w-[70%] flex flex-col gap-4 lg:gap-16`}>
+        <SmoothScroll />
+        <Navbar
+          darkMode={props.darkMode}
+          toggleDarkMode={props.toggleDarkMode}
+        />
         <Hero />
         <About />
         {/* <AnimatedSvg /> */}

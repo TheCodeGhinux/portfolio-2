@@ -1,15 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
 import Scroll from './components/SmoothScroll/SmoothScroll'
+import { DarkModeSwitch } from 'react-toggle-dark-mode'
 
 const App = () => {
+
+  const [darkMode, setDarkMode] = useState(true);
+
+  // const toggleDarkMode = () => {
+  //   setDarkMode(prevDarkMode => !prevDarkMode)
+  // }
+
+  const toggleDarkMode = (checked) => {
+    setDarkMode(checked)
+  }
+
+
+  const styles = {
+    bg: {
+      background: darkMode ? '#282C33' : '#f9f9f9'
+    }
+  }
+
   return (
-    <div className='app bg-darkbg'>
+    <div className={`app`} style={styles.bg}>
       {/* <Scroll /> */}
-      <Home />
+      {/* <DarkModeSwitch /> */}
+      {/* <DarkModeSwitch
+        checked={darkMode}
+        onChange={toggleDarkMode}
+        
+      /> */}
+      <Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </div>
-  )
+  );
 }
 
 export default App

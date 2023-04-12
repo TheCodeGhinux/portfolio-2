@@ -62,7 +62,7 @@ const Hero = () => {
               whileInView='show'
               className='text-xl lg:text-3xl'
             >
-              Ayo is a <br />{' '}
+              Ayo is a {' '}
               <span className='text-primary'>
                 {' '}
                 Software Engineer, Backend Developer

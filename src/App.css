@@ -1,3 +1,25 @@
+:root {
+  --clr-bg-dark: #2c3036;
+  --clr-bg-darkbg: #282C33;
+  --clr-bg-light: #fff;
+  --clr-bg-lightbg: #f9f9f9;
+
+  --clr-text-dark: #282C33;
+  --clr-text-light: #ABB2BF;
+}
+
+.dark {
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text-light);
+  fill: var(--clr-bg-dark)
+}
+
+.light {
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-dark);
+  fill: var(--clr-bg-light);
+}
+
 
 .app {
   height: 100vh;
