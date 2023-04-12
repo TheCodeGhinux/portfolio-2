@@ -7,7 +7,7 @@ import SmoothScroll from '../components/SmoothScroll/SmoothScroll';
 const Home = () => {
   return (
     <>
-      <div className='bg-bg m-auto flex flex-col gap-4 lg:gap-16'>
+      <div className='bg-bg m-auto lg:w-[70%] flex flex-col gap-4 lg:gap-16'>
         {/* <SmoothScroll /> */}
         <Navbar />
         <Hero />

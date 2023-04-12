@@ -22,13 +22,13 @@ const Skills = () => {
           </h3>
         </div>
         <div className='skills-content  m-4 flex items-center'>
-          <div className='skills-img w-[100%] absolute lg:static blur-sm lg:blur-0'>
-            <img src={svg} alt='' />
+          <div className='skills-img w-[90%] absolute lg:static blur-sm lg:blur-0'>
+            <img className='mx-auto' src={svg} alt='' />
           </div>
-          <div className='skills-tab-con w-[100%] flex flex-wrap-reverse lg:flex-nowrap lg:flex-row justify-center gap-4 py-4 m-4'>
+          <div className='skills-tab-con w-[100%] flex flex-wrap-reverse lg:flex-nowrap lg:flex-row justify-center gap-4 py-4'>
             <div className='col1'>
               <motion.div
-                variants={heroTextVariant(1.1, 'left')}
+                // variants={heroTextVariant(1.1, 'left')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -44,7 +44,7 @@ const Skills = () => {
 
             <motion.div className='col2 flex flex-row md:flex-col gap-4'>
               <motion.div
-                variants={heroTextVariant(1.1, 'down')}
+                // variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -57,7 +57,7 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                variants={heroTextVariant(1.1, 'up')}
+                // variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -72,7 +72,7 @@ const Skills = () => {
             </motion.div>
             <motion.div className='col3 flex flex-row md:flex-col gap-4'>
               <motion.div
-                variants={heroTextVariant(1.1, 'down')}
+                // variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'
@@ -93,7 +93,7 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                variants={heroTextVariant(1.1, 'up')}
+                // variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
                 className='skills-tab w-[11rem] text-grey'

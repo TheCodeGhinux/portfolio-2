@@ -29,7 +29,7 @@ const About = () => {
             </button>
           </div>
           <div className="about-pic-con w-[100%]">
-            <img src={img} alt="" />
+            <img className='mx-auto' src={img} alt="" />
           </div>
         </div>
       </div>
