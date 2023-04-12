@@ -2,36 +2,40 @@ import React from 'react'
 import { BsFillSuitHeartFill, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 
 import logo from '../../assets/logo.svg';
+import Logo from '../logo/Logo';
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div>
-      <div className='footer text-grey mb-10 lg:mb-16'>
+      <div className='footer mb-10 lg:mb-16'>
         <div className='footer-con flex justify-between p-8'>
           <div className='footer-logo w-20'>
-            <img src={logo} alt='' />
+            <Logo
+              src={logo}
+              alt=''
+              className={`w-[80px] `}
+            />
           </div>
           <div className='socials-con'>
             <div className='footer-header'>
               <h1 className='text-2xl'>Socials</h1>
             </div>
             <div className='footer-socials-con flex gap-4'>
-              <a href="http://">
-                <BsGithub className='fill-grey w-6 h-6' />
+              <a href='http://'>
+                <BsGithub className=' w-6 h-6' />
               </a>
 
-              <a href="http://">
-                <BsTwitter className='fill-grey w-6 h-6' />
+              <a href='http://'>
+                <BsTwitter className=' w-6 h-6' />
               </a>
 
-              <a href="http://">
-                <BsLinkedin className='fill-grey w-6 h-6' />
+              <a href='http://'>
+                <BsLinkedin className=' w-6 h-6' />
               </a>
-              
             </div>
           </div>
         </div>
-        <div className='copyright flex flex-col items-center justify-center text-grey '>
+        <div className='copyright flex flex-col items-center justify-center '>
           <p className='flex items-center gap-2'>© Copyright 2023.</p>
           <p className='flex items-center gap-2'>
             Built with{' '}

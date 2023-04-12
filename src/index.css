@@ -16,10 +16,11 @@ button {
   font-size: 1.25rem;
   line-height: 1.75rem;
   width: fit-content;
-  color: #fff;
+  /* color: #fff; */
 }
 
 body {
+  height: 100vh;
   /* width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
@@ -50,8 +51,8 @@ nav {
   left: 0;
   bottom: 0;
   width: 70%;
-background: rgb(255 255 255 / 60%);
-    backdrop-filter: blur(6px);
+  background: rgb(255 255 255 / 60%);
+  backdrop-filter: blur(6px);
 }
 
 .menu-btn {
@@ -139,7 +140,7 @@ li {
 }
 
 .skills-tab {
-  border: 1px solid #ABB2BF;
+  border: 2px solid #ABB2BF;
 }
 
 .tab-header {

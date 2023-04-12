@@ -16,6 +16,7 @@ import {
   sentence,
   letter,
 } from '../../../utils/motion.js';
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
 
 
@@ -23,7 +24,13 @@ const text3 =
   'He crafts responsive websites where technologies meet creativity';
 
 
-const Hero = () => {
+const Hero = (props) => {
+
+  const styles = {
+    path:{
+      background: props.darkMode ? "#3f51b5" : "#ff0000",
+    }
+  };
 
 
   // const controls = useAnimation();
@@ -38,7 +45,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div className=' hero  mx-auto px-8 text-white flex flex-col gap-10 lg:gap-28'>
+      <div className={`hero mx-auto px-8 flex flex-col gap-10 lg:gap-28`}>
         <div className='lg:pt-20 lg:top-48 lg:left-44 hero-div text-3xl flex flex-col lg:flex-row gap-8'>
           <motion.div
             variants={staggerContainer}
@@ -62,7 +69,7 @@ const Hero = () => {
               whileInView='show'
               className='text-xl lg:text-3xl'
             >
-              Ayo is a {' '}
+              Ayo is a{' '}
               <span className='text-primary'>
                 {' '}
                 Software Engineer, Backend Developer
@@ -76,8 +83,7 @@ const Hero = () => {
               initial='hidden'
               whileInView='show'
               viewport={{ once: false, amount: 0.25 }}
-              
-              className='text-xl text-grey'
+              className='text-xl'
             >
               {text3.split('').map((char, index) => {
                 return (
@@ -119,14 +125,13 @@ const Hero = () => {
           <h1 className='border-2 border-grey lg:text-2xl p-2 lg:p-8 box-border font-medium '>
             With great power comes great electricity bill
           </h1>
-          <img
-            className='absolute w-[20px] -top-1 lg:top-[-12px] left-4'
-            src={sign}
+
+          <RiDoubleQuotesL
+            className='absolute w-[28px] h-auto -top-3 lg:top-[-12px] left-4'
             alt=''
           />
-          <img
-            className=' absolute w-[20px] bottom-7 lg:bottom-[44px] right-4'
-            src={sign}
+          <RiDoubleQuotesR
+            className={` absolute w-[28px] h-auto bottom-5 lg:bottom-[44px] right-4 `}
             alt=''
           />
           <div className='quote-name right-0 border-2 border-grey border-t-0 ml-auto p-1 lg:p-4 w-fit text-'>

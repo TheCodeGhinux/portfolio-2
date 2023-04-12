@@ -16,7 +16,7 @@ const Skills = () => {
   return (
     <div>
       <div className='skills-con p-2 my-4'>
-        <div className='skills-header text-4xl text-white'>
+        <div className='skills-header text-4xl'>
           <h3 className='line'>
             <span>#</span>skills
           </h3>
@@ -31,7 +31,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'left')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem] text-grey'
+                className='skills-tab w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Languages</h2>
@@ -52,7 +52,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem] text-grey'
+                className='skills-tab w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Databases</h2>
@@ -69,7 +69,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem] text-grey'
+                className='skills-tab w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Others</h2>
@@ -89,7 +89,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem] text-grey'
+                className='skills-tab w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Tools</h2>
@@ -110,7 +110,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem] text-grey'
+                className='skills-tab w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Frameworks</h2>

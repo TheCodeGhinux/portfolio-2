@@ -56,7 +56,7 @@ const Navbar = (props) => {
       <DarkModeSwitch
         checked={props.darkMode}
         onChange={props.toggleDarkMode}
-        className='relative -top-4 right-32 lg:right-0 '
+        className='relative -top-4 right-32 lg:right-0 z-10'
       />
     </div>
   );

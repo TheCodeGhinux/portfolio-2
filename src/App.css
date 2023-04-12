@@ -9,15 +9,18 @@
 }
 
 .dark {
-  background-color: var(--clr-bg-dark);
+  background-color: var(--clr-bg-dark) !important;
   color: var(--clr-text-light);
-  fill: var(--clr-bg-dark)
+  fill: var(--clr-bg-dark);
+  border-color: var(--clr-bg-light);
 }
 
 .light {
-  background-color: var(--clr-bg-light);
+  background-color: var(--clr-bg-light) !important;
+  background: var(--clr-bg-light) !important;
   color: var(--clr-text-dark);
   fill: var(--clr-bg-light);
+  border-color: var(--clr-bg-dark);
 }
 
 
