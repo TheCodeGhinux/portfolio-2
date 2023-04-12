@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import Scroll from './components/SmoothScroll/SmoothScroll'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
+// import SmoothScroll from './components/SmoothScroll/SmoothScroll'
 
 const App = () => {
 
@@ -24,7 +25,8 @@ const App = () => {
   }
 
   return (
-    <div className={`app`} style={styles.bg}>
+    <div style={styles.bg}>
+      {/* <SmoothScroll /> */}
       {/* <Scroll /> */}
       {/* <DarkModeSwitch /> */}
       {/* <DarkModeSwitch

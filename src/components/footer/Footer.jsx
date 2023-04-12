@@ -7,7 +7,7 @@ import Logo from '../logo/Logo';
 const Footer = (props) => {
   return (
     <div>
-      <div className='footer mb-10 lg:mb-16'>
+      <div className='footer mb-20 lg:mb-20'>
         <div className='footer-con flex justify-between p-8'>
           <div className='footer-logo w-20'>
             <Logo
