@@ -16,7 +16,7 @@ const Skills = () => {
   return (
     <div>
       <div className='skills-con p-2 my-4'>
-        <div className='skills-header text-4xl'>
+        <div className='skills-header text-2xl md:text-4xl'>
           <h3 className='line'>
             <span>#</span>skills
           </h3>
@@ -40,8 +40,8 @@ const Skills = () => {
                   <ul className='flex flex-wrap gap-2'>
                     <li>Python, </li>
                     <li>JavaScript, </li>
-                    <li>NodeJs, </li>
-                    <li>ML&AI </li>
+                    <li>TypeScript, </li>
+                    <li>NodeJs </li>
                   </ul>
                 </div>
               </motion.div>
@@ -61,7 +61,7 @@ const Skills = () => {
                   <ul className='flex flex-wrap gap-2'>
                     <li>MongoDB, </li>
                     <li>SQL, </li>
-                    <li>PostgreSql, </li>
+                    <li>PostgreSql </li>
                   </ul>
                 </div>
               </motion.div>
@@ -76,10 +76,12 @@ const Skills = () => {
                 </div>
                 <div className='skill'>
                   <ul className='flex flex-wrap gap-2'>
-                    <li>Python, </li>
-                    <li>JavaScript, </li>
-                    <li>NodeJs, </li>
-                    <li>ML&AI </li>
+                    <li>Data analysis, </li>
+                    {/* <li>JavaScript, </li> */}
+                    {/* <li> </li> */}
+                    <li>ML&AI, </li>
+                    <li>Shell, </li>
+                    <li>OOP </li>
                   </ul>
                 </div>
               </motion.div>

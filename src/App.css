@@ -23,6 +23,16 @@
   border-color: var(--clr-bg-dark);
 }
 
+.dark-fill {
+  color: #282C33;
+  fill: var(--clr-bg-dark);
+}
+
+.white {
+  color: #fff;
+  fill: var(--clr-bg-light);
+}
+
 
 /* .app {
   height: 100vh;

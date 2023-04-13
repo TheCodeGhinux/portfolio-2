@@ -1,6 +1,6 @@
 import React from 'react'
 import AnimatedSvg from '../components/AnimatedSvg/AnimatedSvg';
-import { About, Hero, Skills, Navbar, Footer } from '../components';
+import { About, Hero, Skills, Navbar, Footer, Contact } from '../components';
 import SmoothScroll from '../components/SmoothScroll/SmoothScroll';
 
 
@@ -19,6 +19,7 @@ const Home = (props) => {
         <About />
         {/* <AnimatedSvg /> */}
         <Skills />
+        <Contact />
         <Footer />
       </div>
     </>

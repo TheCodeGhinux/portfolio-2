@@ -18,7 +18,8 @@ const variants = {
   },
 };
 
-const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
+const colors1 = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
+const colors = ['#C778DD', '#C778DD', '#C778DD', '#C778DD', '#C778DD'];
 
 export const MenuItem = ({ id, name, link }) => {
   const style = { border: `2px solid ${colors[id]}`, background:`${colors[id]}` };

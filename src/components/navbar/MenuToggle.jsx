@@ -14,7 +14,7 @@ const Path = (props) => (
 );
 
 
-const MenuToggle = ({ toggle }) => {
+const MenuToggle = ({ toggle }, props) => {
   const [isActive, setIsActive] = useState(true);
 
   return (
@@ -22,9 +22,9 @@ const MenuToggle = ({ toggle }) => {
       <button className='menu-btn' onClick={toggle}>
         <div onClick={() => setIsActive(!isActive)}>
           {isActive ? (
-            <BiMenuAltLeft className='w-6 h-6 fill-white' />
+            <BiMenuAltLeft className={`w-6 h-6`}/>
           ) : (
-            <RiCloseFill className='w-6 h-6 fill-white' />
+            <RiCloseFill className={`w-6 h-6 ${props.darkMode ? 'dark-fill' : 'dark-fill'}`} />
           )}
         </div>
       </button>

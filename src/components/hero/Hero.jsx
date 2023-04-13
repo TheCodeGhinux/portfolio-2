@@ -72,10 +72,10 @@ const Hero = (props) => {
               Ayo is a{' '}
               <span className='text-primary'>
                 {' '}
-                Software Engineer, Backend Developer
+                Software Engineer
               </span>{' '}
-              and
-              <span className='text-primary'> Front-end developer</span>
+              {/* and */}
+              {/* <span className='text-primary'> Front-end developer</span> */}
             </motion.h1>
 
             <motion.h3

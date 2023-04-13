@@ -18,7 +18,7 @@ const Footer = (props) => {
           </div>
           <div className='socials-con'>
             <div className='footer-header'>
-              <h1 className='text-2xl'>Socials</h1>
+              <h1 className='text-2xl p-3'>Socials</h1>
             </div>
             <div className='footer-socials-con flex gap-4'>
               <a href='http://'>
@@ -36,7 +36,7 @@ const Footer = (props) => {
           </div>
         </div>
         <div className='copyright flex flex-col items-center justify-center '>
-          <p className='flex items-center gap-2'>© Copyright 2023.</p>
+          <p className='flex items-center gap-2 p-3'>© Copyright 2023.</p>
           <p className='flex items-center gap-2'>
             Built with{' '}
             <span className=''>

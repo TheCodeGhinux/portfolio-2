@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Home from './pages/Home'
 import Scroll from './components/SmoothScroll/SmoothScroll'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
+import { About, Home, Projects, Skills } from './pages'
+
 // import SmoothScroll from './components/SmoothScroll/SmoothScroll'
 
 const App = () => {
@@ -25,17 +27,32 @@ const App = () => {
   }
 
   return (
-    <div style={styles.bg}>
-      {/* <SmoothScroll /> */}
-      {/* <Scroll /> */}
-      {/* <DarkModeSwitch /> */}
-      {/* <DarkModeSwitch
-        checked={darkMode}
-        onChange={toggleDarkMode}
-        
-      /> */}
-      <Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-    </div>
+    <Router>
+      <div style={styles.bg}>
+        <Routes>
+          <Route
+            path='/'
+            element={
+              <Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+
+          <Route path='/about' element={<About />} />
+          <Route path='/about' element={<Skills />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/about' element={<Projects />} />
+          {/* <Route path='/about' element={<Projects />} /> */}
+        </Routes>
+        {/* <SmoothScroll /> */}
+        {/* <Scroll /> */}
+        {/* <DarkModeSwitch /> */}
+        {/* <DarkModeSwitch
+          checked={darkMode}
+          onChange={toggleDarkMode}
+          
+        /> */}
+      </div>
+    </Router>
   );
 }
 
