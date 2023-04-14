@@ -37,10 +37,25 @@ const App = () => {
             }
           />
 
-          <Route path='/about' element={<About />} />
-          <Route path='/about' element={<Skills />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/about' element={<Projects />} />
+          <Route
+            path='/about'
+            element={
+              <About darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            path='/skills'
+            element={
+              <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            path='/projects'
+            element={
+              <Projects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          {/* <Route path='/about' element={<About />} /> */}
           {/* <Route path='/about' element={<Projects />} /> */}
         </Routes>
         {/* <SmoothScroll /> */}

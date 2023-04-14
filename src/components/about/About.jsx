@@ -4,6 +4,9 @@ import { sentence, letter } from '../../../utils/motion'
 import { RiArrowRightLine } from 'react-icons/ri'
 import img from '../../assets/image.png'
 
+import { Link } from 'react-router-dom';
+
+
 const About = () => {
   return (
     <div>
@@ -24,11 +27,11 @@ const About = () => {
               clients to establish their presence online. I am flexible always strive to
               be up to date with the newest technologies and frameworks.
             </h3>
-            <a href="/about">
+            <Link to="/about">
               <button className='flex items-center gap-1'>
                 Read more <RiArrowRightLine />
               </button>
-            </a>
+            </Link>
             
           </div>
           <div className='about-pic-con w-[100%]'>

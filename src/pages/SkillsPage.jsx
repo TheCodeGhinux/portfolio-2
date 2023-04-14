@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Skills = () => {
+const SkillsPage = () => {
   return (
     <div>Skills</div>
   )
 }
 
-export default Skills
+export default SkillsPage
