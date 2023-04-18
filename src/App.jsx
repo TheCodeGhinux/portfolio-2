@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import './App.css'
 import Scroll from './components/SmoothScroll/SmoothScroll'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
 import { About, Home, Projects, Skills } from './pages'
 
+import { AnimatePresence } from 'framer-motion';
+
 // import SmoothScroll from './components/SmoothScroll/SmoothScroll'
 
 const App = () => {
+
+  const location = useLocation();
 
   const [darkMode, setDarkMode] = useState(true);
 
@@ -27,7 +31,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <AnimatePresence mode='wait'>
       <div style={styles.bg}>
         <Routes>
           <Route
@@ -67,7 +71,7 @@ const App = () => {
           
         /> */}
       </div>
-    </Router>
+    </AnimatePresence>
   );
 }
 
