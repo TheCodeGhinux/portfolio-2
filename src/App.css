@@ -10,7 +10,7 @@
 
 .dark {
   background-color: var(--clr-bg-dark) !important;
-  color: var(--clr-text-light);
+  color: var(--clr-text-light) !important;
   fill: var(--clr-bg-dark);
   border-color: var(--clr-bg-light);
 }
@@ -18,6 +18,20 @@
 .light {
   background-color: var(--clr-bg-light) !important;
   background: var(--clr-bg-light) !important;
+  color: var(--clr-text-dark);
+  fill: var(--clr-bg-light);
+  border-color: var(--clr-bg-dark);
+}
+
+.dark-nav {
+  background-color: rgb(44 48 54 / 40%);
+  color: var(--clr-text-light) !important;
+  fill: var(--clr-bg-dark);
+  border-color: var(--clr-bg-light);
+}
+
+.light-nav {
+  background-color: rgb(255 255 255 / 70%);
   color: var(--clr-text-dark);
   fill: var(--clr-bg-light);
   border-color: var(--clr-bg-dark);

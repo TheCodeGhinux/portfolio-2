@@ -12,9 +12,12 @@ module.exports = {
         primary: '#C778DD',
       },
       backgroundImage: {
-        'logo-pattern':
-          "url('/src/assets/skills-svg.svg')",
+        'logo-pattern': "url('/src/assets/skills-svg.svg')",
         'footer-texture': "url('/img/footer-texture.png')",
+      },
+      screens: {
+        '2xl': '1440px',
+        // => @media (min-width: 1440px) { ... }
       },
     },
   },

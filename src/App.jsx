@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import './App.css'
 import Scroll from './components/SmoothScroll/SmoothScroll'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
-import { About, Home, Projects, Skills } from './pages'
+import { About, Home, Projects, Contact} from './pages'
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -47,16 +47,22 @@ const App = () => {
               <About darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             }
           />
-          <Route
+          {/* <Route
             path='/skills'
             element={
               <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             }
-          />
+          /> */}
           <Route
             path='/projects'
             element={
               <Projects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            path='/contacts'
+            element={
+              <Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             }
           />
           {/* <Route path='/about' element={<About />} /> */}

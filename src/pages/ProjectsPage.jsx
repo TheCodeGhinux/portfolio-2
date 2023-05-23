@@ -7,7 +7,8 @@ import Transitions from '../../utils/transitions';
 const ProjectsPage = (props) => {
   return (
     <>
-      <Transitions
+    <Transitions>
+      <div
         className={`${
           props.darkMode ? 'dark' : 'light'
         } m-auto lg:w-[70%] flex flex-col gap-4 lg:gap-16 text `}
@@ -25,7 +26,8 @@ const ProjectsPage = (props) => {
         </div>
         <Projects />
         <Footer />
-      </Transitions>
+      </div>
+    </Transitions>
     </>
   );
 }

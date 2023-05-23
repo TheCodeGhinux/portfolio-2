@@ -21,7 +21,7 @@ const Skills = () => {
             <span>#</span>skills
           </h3>
         </div>
-        <div className='skills-content  m-4 flex items-center'>
+        <div className='skills-content  m-4 flex items-center text-base md:text-sm lg:text-sm'>
           <div className='skills-img w-[90%] absolute lg:static blur-sm lg:blur-0'>
             <img className='mx-auto' src={svg} alt='' />
           </div>
@@ -31,7 +31,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'left')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem]'
+                className='skills-tab w-[11rem] lg:w-[9rem]  2xl:w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Languages</h2>
@@ -52,7 +52,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem]'
+                className='skills-tab w-[11rem] lg:w-[9rem]  2xl:w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Databases</h2>
@@ -69,7 +69,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem]'
+                className='skills-tab w-[11rem] lg:w-[9rem]  2xl:w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Others</h2>
@@ -91,7 +91,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'down')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem]'
+                className='skills-tab w-[11rem] lg:w-[9rem]  2xl:w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Tools</h2>
@@ -112,7 +112,7 @@ const Skills = () => {
                 variants={heroTextVariant(1.1, 'up')}
                 initial='hidden'
                 whileInView='show'
-                className='skills-tab w-[11rem]'
+                className='skills-tab w-[11rem] lg:w-[9rem]  2xl:w-[11rem]'
               >
                 <div className='tab-header border-b '>
                   <h2>Frameworks</h2>

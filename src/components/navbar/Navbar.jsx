@@ -11,14 +11,40 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 const Navbar = (props) => {
   const [isActive, setIsActive] = useState(true);
 
+  //  const [isDarkMode, setIsDarkMode] = useState(true);
+
+   // const toggleDarkMode = () => {
+   //   setDarkMode(prevDarkMode => !prevDarkMode)
+   // }
+
+  //  const toggleisDarkMode = (checked) => {
+  //    setIsDarkMode(checked);
+  //  };
+
+  //  const styles = {
+  //    bg: {
+  //      background: isDarkMode ? '#195acb' : '#de1e1e',
+  //    },
+  //  };
+
 
 
   return (
-    <div className='flex items-center'>
-      <div className={`navbar ${props.darkMode ? 'dark' : 'light'} p-4 lg:p-8 flex flex-row-reverse lg:flex-row justify-between items-center mx-auto w-[100%]`}>
-        <Link to="/">
+    <div
+      className={`flex items-center sticky top-0 backdrop-blur-[3px] z-10 ${
+        props.darkMode ? 'dark-nav' : 'light-nav'
+      }`}
+    >
+      <div
+        className={`navbar  p-4 lg:p-8 flex flex-row-reverse lg:flex-row justify-between items-center mx-auto w-[100%]`}
+      >
+        <Link to='/'>
           <div className='logo'>
-            <Logo src={logo} alt='' className={`w-[80px] ${props.darkMode ? 'dark' : 'light'}`} />
+            <Logo
+              src={logo}
+              alt=''
+              className={`w-[80px] ${props.darkMode ? 'dark' : 'light'}`}
+            />
           </div>
         </Link>
 
@@ -33,34 +59,31 @@ const Navbar = (props) => {
 
         <div className='navlinks hidden lg:block'>
           <ul className='flex justify-between gap-4'>
-            
-            <Link to="/">
+            <Link to='/'>
               <li className='lg:text-xl  hover:text-primary active:text-primary'>
                 <span className='text-primary '>#</span> home
               </li>
             </Link>
 
-            <Link to="/projects">
+            <Link to='/projects'>
               <li className='lg:text-xl  hover:text-primary active:text-primary'>
                 <span className='text-primary'>#</span> works
               </li>
             </Link>
 
-            <Link to="/about">
+            <Link to='/about'>
               <li className='lg:text-xl  hover:text-primary active:text-primary'>
                 <span className='text-primary'>#</span> about-me
               </li>
             </Link>
 
-            <Link to="/contacts">
+            <Link to='/contacts'>
               <li className='lg:text-xl  hover:text-primary active:text-primary'>
                 <span className='text-primary'>#</span>contacts
               </li>
             </Link>
-            
           </ul>
         </div>
-
       </div>
       <DarkModeSwitch
         checked={props.darkMode}
