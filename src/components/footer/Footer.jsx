@@ -21,15 +21,15 @@ const Footer = (props) => {
               <h1 className='text-2xl p-3'>Socials</h1>
             </div>
             <div className='footer-socials-con flex gap-4'>
-              <a href='http://'>
+              <a href='https://github.com/thecodeghinux'>
                 <BsGithub className=' w-6 h-6' />
               </a>
 
-              <a href='http://'>
+              <a href='https://twitter.com/codeghinux'>
                 <BsTwitter className=' w-6 h-6' />
               </a>
 
-              <a href='http://'>
+              <a href='https://linkedin.com/in/giy/'>
                 <BsLinkedin className=' w-6 h-6' />
               </a>
             </div>

@@ -11,7 +11,7 @@ const Contact = () => {
             <span>#</span>contact
           </h3>
         </div>
-        <div className='contact-content p-4 flex flex-col gap-6 md:flex-row items-center'>
+        <div className='contact-content lg:w-[70%] lg:m-auto p-4 flex flex-col gap-6 md:flex-row items-center'>
           <div className='contact-text w-[100%] flex flex-col gap-4'>
             <h3 className='text-lg md:text-xl '>
               I am interested in freelance and internship opportunities.

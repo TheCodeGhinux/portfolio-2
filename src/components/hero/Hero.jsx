@@ -15,13 +15,14 @@ import {
   textVariant,
   sentence,
   letter,
+  heroImgVariants,
 } from '../../../utils/motion.js';
 import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
 
 
 const text3 =
-  'He crafts responsive websites where technologies meet creativity';
+  'Crafting responsive websites where technologies meet creativity';
 
 
 const Hero = (props) => {
@@ -45,7 +46,7 @@ const Hero = (props) => {
 
   return (
     <div>
-      <div className={`hero mx-auto px-8 flex flex-col gap-10 lg:gap-28`}>
+      <div className={`hero mx-auto px-8 flex flex-col gap-10 lg:gap-28 lg:h-[80vh]`}>
         <div className='lg:pt-20 lg:top-48 lg:left-44 hero-div text-3xl flex flex-col lg:flex-row gap-8'>
           <motion.div
             variants={staggerContainer}
@@ -114,10 +115,23 @@ const Hero = (props) => {
             className='hero-img  w-[90%] relative top-[3rem] lg:top-0 h-60 lg:h-auto'
           >
             <img className='w-[100%] w-[9rem]' src={outline} alt='' />
-            <div className='absolute top-[-4rem] lg:top-[-63px]'>
-              <img className=' ' src={image} alt='' />
+            <motion.div
+              variants={staggerContainer}
+              initial='hidden'
+              whileInView='show'
+              viewport={{ once: false, amount: 0.25 }}
+              className='absolute top-[-4rem] lg:top-[-63px]'
+            >
+              <motion.img 
+                variants={heroImgVariants( 'down', 'tween', 0.2, 0.8)}
+                initial='hidden'
+                whileInView='show'
+                whileHover={{ scale: 1.2, transition: {duration: 3} }}
+                whileTap={{ scale: 0.9, x: "-5px", y: "5px" }}
+                className=' ' src={image} alt='' 
+              />
               <img src={dots} alt='' className='absolute right-[5%] bottom-0' />
-            </div>
+            </motion.div>
           </motion.div>
         </div>
 

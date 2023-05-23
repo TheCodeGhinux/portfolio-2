@@ -25,10 +25,27 @@ export const heroVariants = (direction, type, delay, duration) => ({
   },
 });
 
+export const heroImgVariants = (direction, type, delay, duration) => ({
+  hidden: {
+    x: direction === 'left' ? '-100%' : direction === 'right' ? '120%' : 0,
+    y: direction === 'up' ? '100%' : direction === 'down' ? '25%' : 0,
+  },
+  show: {
+    x: 0,
+    y: 0,
+    transition: {
+      type,
+      delay,
+      duration,
+      ease: 'easeOut',
+    },
+  },
+});
+
 export const heroTextVariant = (delay, direction) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
-    y: direction === 'up' ? '100%' : direction === 'down' ? '-100%' : 0,
+    y: direction === 'up' ? '100%' : direction === 'down' ? '-50%' : 0,
     // z: direction === 'left-right' ? 100 : direction === 'top-right' ? -100 : 0,
     opacity: 0,
   },
@@ -86,3 +103,8 @@ export const letter = {
     y: 0,
   },
 };
+
+export const boxVariant = {
+  visible: { opacity: 1, scale: 2 },
+  hidden: { opacity: 0, scale: 0 },
+}

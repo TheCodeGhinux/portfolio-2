@@ -26,7 +26,7 @@ const App = () => {
 
   const styles = {
     bg: {
-      background: darkMode ? '#282C33' : '#f9f9f9'
+      background: darkMode ? '#545c66' : '#f9f9f9'
     }
   }
 

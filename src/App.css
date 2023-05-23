@@ -10,7 +10,7 @@
 
 .dark {
   background-color: var(--clr-bg-dark) !important;
-  color: var(--clr-text-light) !important;
+  color: var(--clr-bg-light) !important;
   fill: var(--clr-bg-dark);
   border-color: var(--clr-bg-light);
 }
@@ -24,8 +24,8 @@
 }
 
 .dark-nav {
-  background-color: rgb(44 48 54 / 40%);
-  color: var(--clr-text-light) !important;
+  background-color: rgb(99 108 120 / 80%);
+  color: var(--clr-bg-light) !important;
   fill: var(--clr-bg-dark);
   border-color: var(--clr-bg-light);
 }
